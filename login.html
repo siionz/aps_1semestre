@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form id="formLogin">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" required />
+
+      <input type="submit" value="Entrar" />
+
+      <p class="sublegenda">
+        Não tem uma conta? <a href="Cadastro.html">Cadastre-se aqui</a>
+      </p>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("formLogin").addEventListener("submit", function(e) {
+      e.preventDefault(); 
+      alert("Login bem-sucedido!");
+      window.location.href = "paginaquiz.html"; 
+    });
+  </script>
+</body>
+</html>

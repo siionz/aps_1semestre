@@ -1,0 +1,100 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página */
+  body {
+    background-color: #0e1b0f;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Container principal */
+  .container {
+    background-color: #2e5a2e;
+    border-radius: 20px;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  /* Título */
+  .container h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+  
+  /* Labels */
+  label {
+    color: white;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  
+  /* Inputs */
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* Botão */
+  input[type="submit"] {
+    width: 100%;
+    background-color: #1d3d1d;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3a7a3a;
+  }
+  
+  /* Sublegenda */
+  .sublegenda {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+  }
+  
+  .sublegenda a {
+    color: #a1c4a1;
+    text-decoration: none;
+  }
+  
+  .sublegenda a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animação opcional */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
